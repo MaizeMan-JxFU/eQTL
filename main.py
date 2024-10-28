@@ -28,7 +28,7 @@ def num_int_list(input_li:list=[]):
 
 def Manhattan_plot(df:pd.DataFrame, chr:str, pos:str, pvalue:str, ChrTag_len:int=5, threshold:float=None, annote:str=None):
     '''
-    必须输入的项目df: 矩阵, chr: 染色体
+    必须输入的项目df: 矩阵, chr: 染色体, pos: SNP位点, pvalue: 显著性
     '''
     matplotlib.use('agg') # 绘图加速
     plt.rc('font', family='Times New Roman')
